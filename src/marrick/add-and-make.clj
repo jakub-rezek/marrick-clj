@@ -1,3 +1,5 @@
+(ns marrick.add-and-make)
+
 (def point {:x 1, :y 2, :__class_symbol__ 'Point})
 
 (def Point
@@ -34,3 +36,14 @@
                                   (Point 10 0)))
 
 
+;;; exercises
+
+(defn add [p-1 p-2]
+  (Point (+ (x p-1) (x p-2))
+         (+ (y p-1) (y p-2))))
+
+(defn add-shift [this p-2]
+  (shift this (x p-2) (y p-2))) 
+
+(defn make [fn & args]
+  (apply fn args))

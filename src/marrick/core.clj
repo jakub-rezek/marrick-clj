@@ -29,3 +29,6 @@
 
 (defn factorial [n]
   (apply * (map inc (range n))))
+
+;;; 
+
