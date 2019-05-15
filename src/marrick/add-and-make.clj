@@ -47,3 +47,6 @@
 
 (defn make [fn & args]
   (apply fn args))
+
+(defn equal-triangle? [& more]
+  (apply = more) )
